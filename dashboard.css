@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #005f73; /* Dark teal color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* For absolute positioning of buttons */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Larger font for better visibility */
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 15px; /* Space between title and buttons */
+}
+
+.header-buttons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+}
+
+.header-buttons li {
+    margin: 0 20px; /* Spacing between buttons */
+}
+
+.nav-button {
+    background-color: #000000; /* Button color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s ease;
+    font-weight: bold; /* Make button text bold */
+}
+
+.nav-button:hover {
+    background-color: #103632; /* Lighter teal on hover */
+}
+
+/* Section Styles */
+section {
+    max-width: 800px;
+    margin: 30px auto; /* Center the section */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center section content */
+}
+
+h2 {
+    color: #005f73; /* Dark teal */
+    font-size: 1.8em; /* Larger font size */
+}
+
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons */
+}
+
+button {
+    padding: 15px 20px;
+    background-color: #0d8a62; /* Dark teal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em; /* Slightly larger font */
+    margin: 10px 0; /* Space between buttons */
+    transition: background-color 0.3s ease;
+    width: 80%; /* Button width */
+}
+
+button:hover {
+    background-color: #2a9d8f; /* Lighter teal on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Reduce font size for smaller screens */
+    }
+
+    button {
+        width: 90%; /* Adjust button width for smaller screens */
+    }
+
+    .header-buttons {
+        flex-direction: column; /* Stack nav buttons vertically */
+        margin-top: 10px; /* Adjust spacing */
+    }
+
+    .header-buttons li {
+        margin: 5px 0; /* Space between nav buttons */
+    }
+}

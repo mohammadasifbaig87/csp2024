@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #087a0c; /* Dark green header */
+    color: white; /* White text color */
+    padding: 20px; /* Padding for header */
+    text-align: center; /* Center align text */
+    position: relative; /* For positioning buttons */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+header h1 {
+    margin: 0; /* Remove margin */
+    font-size: 2.2em; /* Increase font size for better visibility */
+}
+
+/* Header Button Styles */
+.header-buttons {
+    position: absolute; /* Position buttons absolutely */
+    right: 20px; /* Align to the right */
+    top: 20px; /* Align to the top */
+}
+
+.home-button, .logout-button, .dashboard-button {
+    padding: 10px 15px; /* Padding for buttons */
+    background-color: #333; /* Dark button background */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 5px; /* Rounded corners */
+    margin-left: 5px; /* Space between buttons */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition */
+}
+
+.home-button:hover, .logout-button:hover, .dashboard-button:hover {
+    background-color: #555; /* Lighter background on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Section Styles */
+section {
+    padding: 20px; /* Padding for section */
+    max-width: 900px; /* Maximum width */
+    margin: auto; /* Center the section */
+    background-color: white; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 20px; /* Space above table */
+}
+
+table th, table td {
+    padding: 12px; /* Padding for cells */
+    text-align: left; /* Left align text */
+    border-bottom: 1px solid #ddd; /* Bottom border for rows */
+}
+
+table th {
+    background-color: #f2f2f2; /* Light gray header */
+    font-weight: bold; /* Bold text for headers */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em; /* Smaller font size for mobile */
+    }
+
+    .header-buttons {
+        top: 10px; /* Adjust position for smaller screens */
+        right: 10px; /* Adjust position for smaller screens */
+    }
+
+    section {
+        padding: 15px; /* Less padding for smaller screens */
+    }
+
+    table th, table td {
+        padding: 8px; /* Less padding for smaller screens */
+    }
+
+    .home-button, .logout-button, .dashboard-button {
+        padding: 8px 12px; /* Adjust button size for smaller screens */
+    }
+}

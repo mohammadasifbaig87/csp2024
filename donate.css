@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #0d8a62;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Header Title Styles */
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+/* Header Buttons Container */
+.header-buttons {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex; /* Use flexbox for button alignment */
+    align-items: center; /* Vertically center buttons */
+}
+
+/* Button Styles */
+.home-button, .logout-button, .dashboard-button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.home-button:hover, .logout-button:hover, .dashboard-button:hover {
+    background-color: #555;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px; /* Increased width of the form */
+    margin: 40px auto; /* Centered form with margin */
+    background-color: white;
+    padding: 40px; /* Increased padding for better spacing inside the form */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly more pronounced shadow */
+}
+
+/* Label Styles */
+label {
+    font-size: 1.2em;
+    color: #005f73;
+    display: block; /* Ensures labels are on their own line */
+    margin-bottom: 5px; /* Adds space below each label */
+}
+
+/* Input, Select, and Textarea Styles */
+input, select, textarea {
+    width: calc(100% - 20px); /* Adjusted width to account for padding */
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #0d8a62; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styles in Form */
+button {
+    background-color: #0d8a62; /* Button background color */
+    color: white;
+    padding: 12px; /* Slightly larger padding */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em; /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    width: 100%; /* Button takes full width */
+}
+
+button:hover {
+    background-color: #2a9d8f; /* Lighter hover color */
+}
+
+/* Table Styles */
+table {
+    width: 90%; /* Increased table width */
+    margin: 40px auto; /* Center the table */
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px; /* Increased padding for table cells */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+form, table {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    form {
+        width: 90%; /* Ensure form is responsive */
+    }
+
+    table {
+        width: 100%; /* Ensure table is responsive */
+    }
+
+    /* Adjust header buttons for mobile */
+    .header-buttons {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        position: static; /* Reset positioning for better layout */
+        margin-top: 10px; /* Add margin for spacing */
+    }
+
+    .header-buttons button {
+        margin-top: 5px; /* Space between stacked buttons */
+    }
+}

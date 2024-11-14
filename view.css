@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #0d8a62;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Header Title Styles */
+header h1 {
+    margin: 0;
+    font-size: 2em; /* Slightly larger title */
+}
+
+/* Header Buttons Container */
+.header-buttons {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Button Styles */
+.home-button, .logout-button, .dashboard-button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.home-button:hover, .logout-button:hover, .dashboard-button:hover {
+    background-color: #555;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+/* Image Styles */
+.item-image {
+    width: 60px; /* Set a fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+form, table {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .header-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        position: static; /* Reset positioning */
+        margin-top: 10px; /* Space between stacked buttons */
+    }
+
+    .header-buttons button {
+        margin-top: 5px; /* Space between stacked buttons */
+    }
+
+    table {
+        width: 100%; /* Full width for mobile */
+    }
+}

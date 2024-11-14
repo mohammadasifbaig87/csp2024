@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <h2>Register</h2>
+        <nav>
+            <ul class="header-buttons">
+                <li><a class="nav-button" href="index.php">Home</a></li>
+                <li><a class="nav-button" href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form action="register.php" method="POST">
+            <label for="name"><center>Name</center></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone"><center>Mobile Number</center></label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number.">
+            <label><center>Address</center></label>
+            <label for="door_no">Door No:</label>
+            <input type="text" id="door_no" name="door_no" required>
+
+            <label for="area">Area:</label>
+            <input type="text" id="area" name="area" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" required pattern="[0-9]{6}" title="Please enter a valid 6-digit pincode.">
+
+            <label for="password"><center>Password</center></label>
+            <input type="password" id="password" name="password" required minlength="1">
+
+            <button type="submit">Register</button>
+        </form>
+    </main>
+</body>
+</html>
